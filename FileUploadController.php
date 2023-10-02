@@ -19,8 +19,6 @@ class FileUploadController extends Controller {
         return view('upload-file.index');
     }
 
-
-    
     public function uploadLargeFiles(Request $request) {
         $receiver = new FileReceiver('file', $request, HandlerFactory::classFromRequest($request));
 
