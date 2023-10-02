@@ -44,6 +44,8 @@ class FileUploadController extends Controller {
             ];
         }
 
+
+        
         // otherwise return percentage informatoin
         $handler = $fileReceived->handler();
         return [
